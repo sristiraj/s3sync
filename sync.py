@@ -138,4 +138,4 @@ class S3Sync:
 
 def lambda_handler(event, context):
     sync = S3Sync()
-    return sync.sync(source_bucket="novartisrssr27devief1sttm001", source_prefix="sttm-dynamodb-backup", dest_bucket="novartisrssr27devief1sttm001", dest_prefix="sttm-dynamodb-backup1")
+    return sync.sync(source_bucket="sourcebucket", source_prefix="sourcepath", dest_bucket="destinationbucket", dest_prefix="destinationpath")
